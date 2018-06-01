@@ -1,0 +1,7 @@
+FDK_EXE="/Users/Tony/bin/FDK/Tools/osx"
+PATH="/usr/local/share/dotnet:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Tony/bin/FDK/Tools/osx"
+CLASSPATH="/Users/Tony/Repositories/ecourt-laserfiche/lib/*:."
+export PATH=/usr/local/share/dotnet/bin:$PATH
+export PATH
+export FDK_EXE
+export CLASSPATH

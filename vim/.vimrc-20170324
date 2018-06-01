@@ -1,0 +1,42 @@
+set backspace=indent,eol,start
+set ruler
+augroup HelpInTabs
+	autocmd!
+	autocmd Bufenter *.txt call HelpInNewTab()
+augroup END
+
+function! HelpInNewTab()
+	if &buftype == 'help'
+		"Convert the help window to a tab...
+		execute "normal \<C-W>T"
+	endif
+endfunction
+
+nnoremap <up>    <nop>
+nnoremap <down>  <nop>
+nnoremap <left>  <nop>
+nnoremap <right> <nop>
+inoremap <up>    <nop>
+inoremap <down>  <nop>
+inoremap <left>  <nop>
+inoremap <right> <nop>
+
+
+set lines=999 columns=9999
+
+colorscheme base16-default-dark
+
+call plug#begin('~/.vim/plugins')
+  Plug 'crusoexia/vim-monokai'
+call plug#end()
+
+syntax on
+colorscheme monokai
+set t_Co=256  " vim-monokai now only support 256 colours in terminal.
+
+let g:monokai_term_italic = 1
+let g:monokai_gui_italic = 1
+
+set tabstop=4
+
+set guifont=Menlo\ Regular:h14

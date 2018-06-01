@@ -1,0 +1,4 @@
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet"
+CLASSPATH="/Users/Tony/Repositories/ecourt-laserfiche/lib/*:."
+export PATH
+export CLASSPATH

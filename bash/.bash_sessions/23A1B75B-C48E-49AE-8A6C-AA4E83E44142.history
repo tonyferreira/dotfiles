@@ -1,0 +1,503 @@
+git add .
+git commit -m "Added create static factory method to FunctionGroupFunction.  Removed commented out code."
+git push tony --all
+clear
+git st
+git branch
+git checkout -b 20170124
+git add .
+git commit -m "Multi-graph sample"
+git push tony --all
+clear
+git add .
+git commit -m "Create chart function for d3 api look-and-feel"
+git push tony --all
+git add .'
+
+clear
+git add .
+git commit -m "Refactor chart render function to iteration all elements in a selection"
+git push tony --all
+clear
+git branch
+git checkout -b 20170125
+clear
+git branch
+git diff
+git st
+git checkout app/views/multigraph.html
+clear
+git add .
+git commit -m "Multi-chart zoom transition"
+git push tony --all
+git tag -m "Chart zoom working"
+git tag "chart zoom working"
+git tag "chart-zoom-working"
+git tag
+git tag --list
+clear
+git tags
+git alias
+git config --global alias.last 'log -1 HEAD'
+git config --global alias.tags 'git tag --list'
+git tags
+git config --global alias.tag = 'tag --list'
+git tags
+git config -h
+git config --global unset alias.tags
+git config --global --unset alias.tags
+git config --global alias.tags 'tag --list'
+git tags
+clear
+git last
+git st
+git lg
+git push tony --all
+git push tony --tags
+clear
+git --version
+brew update git
+brew upgrade git
+clear
+code . -N
+code . -N
+git branch
+git checkout -b 20170126
+git commit -a -m "Refactor chart function to use 'real' telemetry data"
+git push tony --all
+clear
+git log --oneline --decorate
+clear
+git log --oneline --decorate --graph --all
+clear
+git branch --merged
+git branch --unmerged
+git branch --no-merged
+clear
+git branch --merged
+git branch
+clear
+git branch -vv
+clear
+git checkout -b 20170127
+cat ~/.gitconfig
+git config --global --list
+clear
+git config --global core.autocrlf input 
+git config --global core.autocrlf
+clear
+git log --all --oneline --graph --decorate"
+"
+git log --all --oneline --graph --decorate
+clear
+cd repositories/pa42/swift/app/webcomponents
+http-server
+clear
+http-server
+clear && http-server
+clear
+cd ../
+ls
+cd views
+ls
+http-server
+code . -N
+http-server
+clear
+http-server
+cd repositories
+ls
+cd google-cloud-dotnet
+code . -N
+cd ../google-api-dotnet-client
+code . -N
+exit
+cd repositories
+git clone https://github.com/nodatime/nodatime.git
+git clone https://github.com/GoogleCloudPlatform/google-cloud-dotnet.git
+git clone https://github.com/google/google-api-dotnet-client.git
+exit
+cd repositories
+git clone https://github.com/chenjianjx/wsdl2html.git
+cd wsdl2html/
+ls
+cd src
+ls
+cd main
+ls
+cd bin
+ls
+cat wsdl2html.sh
+clear
+cd ../../../
+ls
+mvn package
+cd target
+ls
+clear
+unzip wsdl2html-some-version-jarset.zip
+ls
+open .
+clear
+ls
+cd wsdl2html-3.0.2
+ls
+./wsdl2html.sh http://10.33.100.142:8085/?singleWsdl .
+exit
+cd repositories/pa42/swift
+electron .
+cd app/views
+ls
+http-server
+clear
+http-server
+clear
+exit
+cd repositories/pa42
+git st
+cd swift
+git st
+git checkout -b 20170201
+clear
+git add .
+git commit -m "Vertical line tool across multiple graphs"
+git commit -a -m "Cleanup commented code.  Move line tool text to top of line."
+git push tony --all
+git commit -a -m "Start data conversion"
+git push tony --all
+clear
+git commit -a -m "Convert data to time value before passing to chart"
+clear
+git push tony --all
+clear
+git checkout -b 20170203
+git commit -a -m "Edit chart data to keep last non-zero value if no value for current tick."
+git push tony --all
+clear
+git branch
+git checkout -b 20170204
+clear
+electron .
+electron .
+clear
+git commit -a -m "TimeAxis constructor function"
+git push tony --all
+clear
+git remote add bitbucket http://tferreira92879:nephi31978@bitbucket.org/tferreira92879/swift
+git push bitbucket --all
+clear
+git st
+git add .
+git st
+git commit -m "Added new files"
+git push tony --all
+git push bitbucket --all
+git st
+clear
+gi tt
+git st
+clear
+ssh 10.0.0.15
+ssh admin@10.0.0.15
+ssh admin@10.0.0.2
+cd repositories/pa42/swift
+git branch
+clear
+git checkout -b 20170218-FunctionGroupRefactor
+code . -N
+electron .
+git add .
+git commit -m "Add missile type and variant to function group visual tree"
+git push tony --all && git push bitbucket --all
+clear
+electron .
+git add .
+git commit -m "Toggle function group expansion"
+git push tony --all && git push bitbucket --all
+clear && electron 
+clear && electron .
+git add .
+git commit -m "Missile type and variant indent within function group tree"
+clear
+electron .
+git st
+git checkout app/views/index/index.html
+clear
+electron .
+clear
+git st
+git checkout app/views/index/index.html
+clear && electron .
+git add .
+git commit -m "Variant expansion"
+clear && electron .
+git add .
+git commit -m "Missile Type expansion"
+git push tony --all && git push bitbucket --all
+clear
+electron .
+git add .
+git commit -m "Added CSS for function groups to control spacing"
+git push tony --all && git push bitbucket --all
+clear
+ping antec
+clear
+ping antec
+clear
+git checkout -b 20170220-VerticalLine
+code . -N
+electron .
+git add .
+git commit -m "Line tool across chart and axis container"
+git push tony --all && git push bitbucket --all
+clear
+code . -N
+electron .
+electron --version
+sudo npm update electron-prebuilt -g
+sudo npm update electron-prebuilt
+sudo npm update electron-prebuilt -g
+clear
+electron --version
+electron -version
+exit
+cd repositories/pa42/swift
+electron --version
+npm uninstall electron-prebuilt
+npm uninstall electron-prebuilt -g
+npm uninstall electron-prebuilt -g --save-dev
+clear
+electron .
+clear
+npm install electron --save-dev
+electron --version
+electron .
+clear
+npm install
+electron .
+clear
+exit
+cd repositories/pa42/swift
+electron --version
+exit
+cd repositories/pa42/swift
+electron .
+clear
+npm install -g electron
+clear
+sudo npm install -g electron
+electron .
+clear
+cd repositories/pa42/swift
+electron .
+node --version
+exit
+node --version
+cd repositories/pa42/swift
+npm uninstall electron-prebuilt
+npm uninstall -g electron-prebuilt
+npm uninstall --save-dev electron-prebuilt
+npm uninstall electron-prebuilt --save
+npm uninstall electron-prebuilt --save-dev
+npm uninstall electron-prebuilt --global
+clear
+npm uninstall electron
+npm uninstall electron --save-dev
+npm uninstall electron -g
+npm uninstall electron --save
+npm uninstall electron --global
+clear
+electron
+clear
+npm get prefix
+cd ~/
+pwd
+cd /
+pwd
+whoami
+sudo chown -R Tony /usr/local
+clear
+cd ~/repositories/pa42/swift
+ls
+clear
+npm install -g electron
+rm -rf /usr/local/bin/electron
+cd /usr
+ls
+cd lib
+ls
+clear
+ls -la
+cd node-modules
+ls
+clear
+npm list -g
+clear
+cd /usr/local/lib
+ls
+ls -la | grep n
+cd node_modules
+clear
+ls
+clear
+cd /
+npm install -g electron
+cd repositories/swift
+cd ~/repositories/pa42/swift
+clear
+electron --version
+electron .
+code . -N
+electron .
+electron --version
+electron -v
+clear
+npm install -g electron@beta
+electron -v
+clear
+electron .
+git add .
+git commit -m "Create chart container web component."
+git push tony --all && git push bitbucket --all
+clear
+electron .
+git add .
+git commit -m "Focus Line on chart container"
+git push tony --all && git push bitbucket --all
+clear
+git st
+electron .
+clear
+git checkout -b 20170224
+code .
+clear && electron .
+clear && electron .
+clear && electron .
+clear && electron .
+clear && electron .
+clear && electron .
+clear && electron .
+LS
+CD APP
+LS
+cd app
+ls
+http-server
+cd repositories/pa42/swift
+electron .
+git checkout -b 20170227
+git add .
+git commit -m "Focus line proof-of-concept"
+clear
+git push tony --all && git push bitbucket --all
+clear && electron .
+git add .
+git commit -m "Add foreign object to contain div within chart container svg in order to enable scrolling"
+git push tony --all && git push bitbucket --all
+clear
+electron .
+git add .
+git commit -m "Change chart container dimensions for proper scrolling"
+git push tony --all && git push bitbucket --all
+cd repositories/pa42/swift
+electron .
+git checkout -b 20170225
+clear
+electron .
+code .
+git st
+clear
+cd app/views
+ls
+http-server
+clear
+cd ../../
+clear
+code .
+clear && electron .
+clear && electron .
+git checkout -b 20170228
+clear
+electron .
+git add .
+git commit -m "Chart and Axis SVG container heights"
+git push tony --all && git push bitbucket --all
+clear && electron .
+clear && electron .
+git add .
+git commit -m "Add function group under new Missile Type and Variant hierarchy"
+git push tony --all && git push bitbucket --all
+clear && electron .
+git add .
+git commit -m "Add function to function group using new missile type and missile variant hierarchy"
+git push tony --all && git push bitbucket --all
+clear && electron .
+git add .
+git commit -m "Check for existing function group before adding"
+git push tony --all && git push bitbucket --all
+ping juryweb.mono.courts.ca.gov
+netstat https://juryweb.mono.courts.ca.gov
+exot
+exit
+nettrc https://juryweb.mono.courts.ca.gov
+nettrace www.google.com
+exit
+brew unlink openssl
+which openssl
+brew uninstall openssl
+brew uninstall sane-backends
+clear
+exit
+cd repositories/pa42
+cd swift
+clear
+git checkout -b 20170306
+code .
+electron .
+git add .
+git commit -m "Vertical line tool text labels"
+git push tony --all && git push bitbucket --all
+clear
+git checkout -b 20170306-Zoom
+clear
+clear && electron .
+git add .
+git commit -m "Multi-Chart zoom brush.  However, had to turn events off on div via pointer-events, so scroll no longer works."
+git push tony --all && git push bitbucket --all
+clear
+git checkout -b 20170307
+electron .
+clear
+git add .
+git commit -m "Brush zoom over multiple charts.  Still need to add zoom function call to chart class to do the actual zoom."
+git push tony --all && git push bitbucket --all
+ ldf
+clear
+electron .
+git st
+git add .
+git commit -m "Code cleanup and variable name changes."
+git push tony --all && git push bitbucket --all
+clear
+git checkout -b 20170308
+code .
+electron .
+git add .
+git commit -m "Remove function from function group when deselected in group builder"
+git push tony --all && git push bitbucket --all
+git add .
+git commit -m "Code cleanup"
+git push tony --all && git push bitbucket --all
+clear && electron .
+git add .
+git commit -m "Moved group builder functions from functions directory to groupBuilder directory"
+git push tony --all && git push bitbucket --all
+clear
+brew link --force openssl
+dotnet
+exit
+dotnet
+exit
+dotnet
+which openssl
+exit

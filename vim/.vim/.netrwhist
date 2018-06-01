@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/Tony/Repositories/pa42/swift/app/js'
+let g:netrw_dirhist_2='/Users/Tony/Repositories/pa42/swift'
+let g:netrw_dirhist_3='/Users/Tony/Repositories/pa42/swift/build'
+let g:netrw_dirhist_4='/Users/Tony/Repositories/pa42/swift'
+let g:netrw_dirhist_5='/'
+let g:netrw_dirhist_6='/Users/Tony/Repositories/pa42/swift/app/js'
