@@ -1,7 +1,7 @@
 VERSION	206
+MruFile	{'path': '', 'time': 1527883986}
 MruFile	{'path': '/Users/Tony/powerlevel9k/powerlevel9k.zsh-theme', 'time': 1527783362}
 MruFile	{'path': '/Users/Tony/.tmux.conf', 'time': 1527518630}
-MruFile	{'path': '', 'time': 1527515571}
 MruFile	{'path': '/Users/Tony/Repositories/usmc-make/tbr', 'time': 1526664251}
 MruFile	{'path': '/Users/Tony/Repositories/usmc-make/tst', 'time': 1521130467}
 MruFile	{'path': '/Users/Tony/Repositories/laserfiche/laserfiche-dms/tst', 'time': 1513023300}
@@ -56,10 +56,12 @@ MruFile	{'path': '/', 'time': 1490791558}
 MruFile	{'path': '/Users/Tony/Repositories/pa42/swift/build/config.gypi', 'time': 1490791422}
 MruFile	{'path': '/Users/Tony/Repositories/pa42/swift/', 'time': 1490791347}
 MruFile	{'path': '/Users/Tony/Repositories/pa42/swift/app/js/', 'time': 1490790821}
+MruCmd	{'time': 1527884121, 'command': ':q'}
+MruCmd	{'time': 1527884110, 'command': ':version'}
+MruCmd	{'time': 1527883989, 'command': ':filetype'}
 MruCmd	{'time': 1527783362, 'command': ':wq'}
 MruCmd	{'time': 1527783340, 'command': ':qw'}
 MruCmd	{'time': 1527783331, 'command': ':set fileformat=unix'}
-MruCmd	{'time': 1527518591, 'command': ':q'}
 MruCmd	{'time': 1527515585, 'command': ':q!'}
 MruCmd	{'time': 1505598476, 'command': ':!q'}
 MruCmd	{'time': 1492707786, 'command': ':!'}

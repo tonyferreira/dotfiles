@@ -8,9 +8,9 @@ export PKG_CONFIG_PATH=/usr/local/Cellar/zeromq/4.2.2/lib/pkgconfig
 export PATH="/usr/bin:/usr/local/Cellar/sstp-client/1.0.12/sbin:$HOME/.fastlane/bin:node_modules/electron/dist/Electron.app/Contents/MacOS:/Applications/chromedriver:$HOME/.rbenv/shims:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export ASPNETCORE_ENVIRONMENT=integration
 export fpath=(~/.zsh/completion $fpath)
-
-# vi command keymap
-#bindkey -v
+export visual=vim
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+export DOTFILES=/Users/Tony/Repositories/dotfiles
 
 HISTFILE=˜/.bash_history
 HISTSIZE=1000
@@ -23,12 +23,30 @@ ZSH_TMUX_AUTOSTART='true'
 
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source ~/powerlevel9k/powerlevel9k.zsh-theme
 
-# plugins=(sudo git node history taskwarrior tmux tmuxinator zsh-autosuggestions zsh-completions docker)
-plugins=(sudo git docker colorize bundler node history zsh-autosuggestions zsh-completions)
+plugins=(
+  sudo
+  git
+  docker
+  docker-compose
+  kubectl
+  man
+  mvn
+  postgres
+  colorize
+  bundler
+  node
+  history
+  rsync
+  spring
+  systemd
+  tmux
+  colored-man-pages
+  zsh-autosuggestions
+  zsh-completions
+)
 
 setopt ignore_eof
 setopt nobeep
@@ -62,6 +80,8 @@ alias python="python2"
 alias pip="pip3"
 alias compose="docker-compose"
 alias pth="print -l $path"
+alias vim=nvim
+alias vi=nvim
 
 function split() {
   echo $1 | tr ':' '\n'
@@ -89,4 +109,4 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-usmc-make
+# usmc-make
