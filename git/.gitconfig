@@ -16,6 +16,8 @@
 	tool = bc3
 [mergetool "bc3"]
 	trustExitCode = true
+[pretty]
+	prettyprint = %Cred%ad%x09%Cblue%an%x09%x09%C(yellow)%h%x09%Creset%<(75,trunc)%s
 [alias]
 	# lg = "!source ~/.githelpers && pretty_git_log"
 	conflicts = diff --name-only --diff-filter=U
@@ -40,3 +42,4 @@
 	del = !sh -c 'git l | sed -n 1p | xargs git branch -D'
 	conf ="!f() { cat ~/.gitconfig; }; f"
 	snapshot= !sh -c 'git stash && git stash apply'
+	diffc = "!f() { git log $1..$2 --pretty=prettyprint --date=short; }; f"
