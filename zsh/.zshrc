@@ -69,7 +69,7 @@ alias copylast='echo $(fc -l -1) | pbcopy'
 alias swift="cd ~/Repositories/pa42/swift && clear"
 alias ecourt="cd ~/Repositories/@ecourt/ecourt-fork && clear"
 alias repositories="cd ~/Repositories && clear"
-alias usmc-make="cd ~/Repositories/usmc-make && clear"
+alias usmc-make="cd ~/Repositories/usmc/usmc-make && clear"
 alias zshrc="code ~/.zshrc"
 alias tomcat="cd /usr/local/tomcat && clear"
 alias viewlog="clear && tail -f /Users/Tony/ecourt/logs/sustain.log"
@@ -82,6 +82,10 @@ alias compose="docker-compose"
 alias pth="print -l $path"
 alias vim=nvim
 alias vi=nvim
+
+function lx() {
+  ls -l | awk '{print $9}'
+}
 
 function split() {
   echo $1 | tr ':' '\n'

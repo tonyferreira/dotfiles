@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Palenight Theme",
+    "editor.fontWeight": "100",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false
+}

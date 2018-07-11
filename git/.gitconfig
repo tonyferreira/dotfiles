@@ -39,3 +39,4 @@
 	bq = !sh -c 'clear && git branch | sed /\\*/d | less'
 	del = !sh -c 'git l | sed -n 1p | xargs git branch -D'
 	conf ="!f() { cat ~/.gitconfig; }; f"
+	snapshot= !sh -c 'git stash && git stash apply'
