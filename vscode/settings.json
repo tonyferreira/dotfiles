@@ -8,5 +8,7 @@
     "editor.minimap.enabled": false,
     "window.zoomLevel": 0,
     "explorer.confirmDelete": false,
-    "team.showWelcomeMessage": false
+    "team.showWelcomeMessage": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.startupEditor": "newUntitledFile"
 }
