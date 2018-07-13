@@ -8,4 +8,5 @@
     "editor.minimap.enabled": false,
     "window.zoomLevel": 0,
     "explorer.confirmDelete": false,
+    "team.showWelcomeMessage": false
 }
