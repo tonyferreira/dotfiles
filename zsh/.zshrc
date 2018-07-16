@@ -113,4 +113,4 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# usmc-make
+usmc-make
