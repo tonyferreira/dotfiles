@@ -6,11 +6,11 @@ export WEBAPPS=$TOMCAT/webapps
 export SOAPUI_HOME=/Applications/SoapUI-5.3.0.app/Contents/java/app/bin
 export PKG_CONFIG_PATH=/usr/local/Cellar/zeromq/4.2.2/lib/pkgconfig
 export PATH="/usr/bin:/usr/local/Cellar/sstp-client/1.0.12/sbin:$HOME/.fastlane/bin:node_modules/electron/dist/Electron.app/Contents/MacOS:/Applications/chromedriver:$HOME/.rbenv/shims:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
-export ASPNETCORE_ENVIRONMENT=integration
 export fpath=(~/.zsh/completion $fpath)
 export visual=vim
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 export DOTFILES=/Users/Tony/Repositories/dotfiles
+export ASPNETCORE_ENVIRONMENT=docker
 
 HISTFILE=˜/.bash_history
 HISTSIZE=1000
@@ -82,6 +82,8 @@ alias compose="docker-compose"
 alias pth="print -l $path"
 alias vim=nvim
 alias vi=nvim
+alias docker-clean-unused='docker system prune --all --force --volumes'
+alias docker-clean-all='docker container stop  && docker system prune -a -f --volumes'
 
 function lx() {
   ls -l | awk '{print $9}'
@@ -110,7 +112,7 @@ prompt pure
 
 export PATH="$HOME/.fastlane/bin:$PATH"
 
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-usmc-make
+# usmc-make
+

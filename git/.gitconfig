@@ -8,15 +8,10 @@
 	m = merge --no-ff
 [diff]
 	tool = bc3
-[difftool "bc"]
-	trustExitCode = true
 [difftool]
-	prompt = false
 	bc3 = trustExitCode
 [merge]
 	tool = bc3
-[mergetool "bc3"]
-	trustExitCode = true
 [mergetool]
 	bc3 = trustExitCode
 [pretty]

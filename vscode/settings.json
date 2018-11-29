@@ -4,7 +4,6 @@
     "editor.fontSize": 16,
     "editor.fontWeight": "100",
     "editor.minimap.enabled": false,
-    "files.autoSave":"afterDelay",
     "files.trimTrailingWhitespace": false,
     "files.exclude": {
     "**/.git": true,
@@ -18,17 +17,19 @@
     "workbench.editor.enablePreview": false,
     "window.zoomLevel": 0,
     "extensions.ignoreRecommendations": false,
-    "sync.gist": "a3b15a59180e2014945a28f65d781f67",
-    "sync.host": "",
-    "sync.pathPrefix": "",
     "sync.quietSync": false,
     "sync.askGistName": false,
     "sync.removeExtensions": true,
     "sync.syncExtensions": true,
     "sync.autoDownload": false,
     "sync.autoUpload": false,
-    "sync.lastUpload": "2018-07-26T01:50:25.572Z",
-    "sync.lastDownload": "2018-07-19T20:08:41.324Z",
     "sync.forceDownload": false,
-    "workbench.colorTheme": "Palenight Theme"
+    "workbench.colorTheme": "Palenight Theme",
+    "explorer.confirmDelete": false,
+    "explorer.openEditors.visible": 0,
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "afterDelay",
+    "breadcrumbs.enabled": true,
+    "npm.enableScriptExplorer": true,
+    "sync.gist": "3402bf443f031e231a8f299c92c08852"
 }
