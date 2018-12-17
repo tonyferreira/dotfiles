@@ -1,15 +1,9 @@
 export ZSH=/Users/Tony/.oh-my-zsh
 export Z_HOME=/usr/local/Cellar/z/1.9/etc/profile.d/z.sh
 export MANPATH=/usr/local/man:$MANPATH
-export TOMCAT=/usr/local/tomcat
-export WEBAPPS=$TOMCAT/webapps
-export SOAPUI_HOME=/Applications/SoapUI-5.3.0.app/Contents/java/app/bin
-export PKG_CONFIG_PATH=/usr/local/Cellar/zeromq/4.2.2/lib/pkgconfig
 export PATH="/usr/bin:/usr/local/Cellar/sstp-client/1.0.12/sbin:$HOME/.fastlane/bin:node_modules/electron/dist/Electron.app/Contents/MacOS:/Applications/chromedriver:$HOME/.rbenv/shims:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export fpath=(~/.zsh/completion $fpath)
 export visual=vim
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
-export DOTFILES=/Users/Tony/Repositories/dotfiles
 export ASPNETCORE_ENVIRONMENT=docker
 
 HISTFILE=˜/.bash_history
@@ -21,11 +15,6 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 ZSH_TMUX_AUTOSTART='true'
 
-
-source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source ~/powerlevel9k/powerlevel9k.zsh-theme
-
 plugins=(
   sudo
   git
@@ -34,17 +23,9 @@ plugins=(
   kubectl
   man
   mvn
-  postgres
-  colorize
-  bundler
   node
   history
-  rsync
-  spring
-  systemd
-  tmux
   colored-man-pages
-  zsh-autosuggestions
   zsh-completions
 )
 
@@ -82,6 +63,8 @@ alias compose="docker-compose"
 alias pth="print -l $path"
 alias vim=nvim
 alias vi=nvim
+alias path="split $PATH"
+alias chromedebug="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222"
 alias docker-clean-unused='docker system prune --all --force --volumes'
 alias docker-clean-all='docker container stop  && docker system prune -a -f --volumes'
 
@@ -110,9 +93,12 @@ autoload -Uz compinit && compinit -i
 autoload -U promptinit; promptinit
 prompt pure
 
-export PATH="$HOME/.fastlane/bin:$PATH"
+# export PATH="$HOME/.fastlane/bin:$PATH"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+source $ZSH/oh-my-zsh.sh
+source ~/zsh-syntax-highlighting.zsh
+# source ~/powerlevel9k/powerlevel9k.zsh-theme
 
-# usmc-make
+cd ~/Repositories/usmc/usmc-make
 
+clear

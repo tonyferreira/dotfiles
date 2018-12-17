@@ -37,6 +37,8 @@
 	last = log -1 HEAD --pretty=prettyprint --date=short
   	amend = commit --amend
 	delete = !sh -c 'git la | sed -n 1p | xargs git branch -D'
+	origin=!sh -c 'git laa | grep origin'
+	remotes=!sh -c 'git br --all | grep remotes'
 	refs = for-each-ref --format='%(committerdate:short),%(authorname),%(refname:short)' --sort=committerdate
 	who = !sh -c 'git refs| column -t -s ","'
 	notpushed = log --branches --not --remotes --pretty=%Cred%ad%x09%Cblue%an%x09%x09%C(yellow)%h%x09%Creset%<(75,trunc)%s --date=short
