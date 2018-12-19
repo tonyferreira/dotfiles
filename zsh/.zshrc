@@ -99,6 +99,4 @@ source $ZSH/oh-my-zsh.sh
 source ~/zsh-syntax-highlighting.zsh
 # source ~/powerlevel9k/powerlevel9k.zsh-theme
 
-cd ~/Repositories/usmc/usmc-make
-
 clear
