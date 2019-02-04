@@ -6,16 +6,14 @@
 	editor   = code-insiders
 [status]
 	m = merge --no-ff
-[diff]
-	tool = bc3
-[difftool]
-	bc3 = trustExitCode
-[merge]
-	tool = bc3
-[mergetool]
-	bc3 = trustExitCode
 [pretty]
 	prettyprint = %Cred%ad%x09%Cblue%an%x09%x09%C(yellow)%h%x09%Creset%<(75,trunc)%s
+[diff]
+	tool = bc3
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	trustExitCode = true
 [alias]
 	b = branch
 	st = status
@@ -31,7 +29,7 @@
 	laa = for-each-ref --sort=committerdate --format='%(refname:short)'
 	diffd = !sh -c 'git diff origin/development..HEAD --name-status'
 	diffb = !sh -c 'git log $1..$2 --pretty=prettyprint --date=short '
-	difft = difftool --dir-diff
+	difft = difftool --dir-diff --no-symlinks
  	diffc = diff --cached
 	conf = !sh -c 'cat ~/.gitconfig'
 	last = log -1 HEAD --pretty=prettyprint --date=short
@@ -47,3 +45,5 @@
 	conflicts = diff --name-only --diff-filter=U
 	unstage = reset HEAD --
 	userstats = shortlog -s -n --all
+	keep-theirs= !sh -c "grep -lr '<<<<<<<' . | cut -d '/' -f2- | xargs git checkout --theirs"
+	keep-ours= !sh -c "grep -lr '<<<<<<<' . | cut -d '/' -f2- | xargs git checkout --ours"
