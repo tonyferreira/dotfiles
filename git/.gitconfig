@@ -23,8 +23,9 @@
 	br = !sh -c 'git branch --all | less'
 	lg = log --pretty=prettyprint --date=short
 	fa = fetch --all --prune
-	fd = fetch origin development --prune
+	fo = fetch origin --prune
 	pd = pull origin development --no-edit
+    pm = pull origin master --rebase --no-edit
 	la = for-each-ref --sort=committerdate --format='%(refname:short)' refs/heads
 	bq = !sh -c 'clear && git branch | sed /\\*/d | less'
 	stsh = !sh -c 'git stash && git stash apply'
@@ -47,3 +48,5 @@
 	conflicts = diff --name-only --diff-filter=U
 	unstage = reset HEAD --
 	userstats = shortlog -s -n --all
+    compare = log --left-right --graph --cherry-pick --oneline
+

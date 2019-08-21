@@ -1,19 +1,18 @@
 export ZSH=/Users/Tony/.oh-my-zsh
 export Z_HOME=/usr/local/Cellar/z/1.9/etc/profile.d/z.sh
+export JAVA_HOME=$(/usr/libexec/java_home)
 export MANPATH=/usr/local/man:$MANPATH
 export PATH="/usr/bin:/usr/local/Cellar/sstp-client/1.0.12/sbin:$HOME/.fastlane/bin:node_modules/electron/dist/Electron.app/Contents/MacOS:/Applications/chromedriver:$HOME/.rbenv/shims:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export fpath=(~/.zsh/completion $fpath)
 export visual=vim
-export ASPNETCORE_ENVIRONMENT=docker
 
 HISTFILE=˜/.bash_history
 HISTSIZE=1000
 SAVEHIST=1000
 ZSH_THEME="af-magic"
 HIST_STAMPS="mm/dd/yyyy"
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
-ZSH_TMUX_AUTOSTART='true'
 
 plugins=(
   sudo
@@ -26,7 +25,6 @@ plugins=(
   node
   history
   colored-man-pages
-  zsh-completions
 )
 
 setopt ignore_eof
@@ -51,8 +49,8 @@ alias swift="cd ~/Repositories/pa42/swift && clear"
 alias ecourt="cd ~/Repositories/@ecourt/ecourt-fork && clear"
 alias repositories="cd ~/Repositories && clear"
 alias usmc-make="cd ~/Repositories/usmc/usmc-make && clear"
+alias smstools="cd ~/Repositories/smstools && clear"
 alias zshrc="code ~/.zshrc"
-alias tomcat="cd /usr/local/tomcat && clear"
 alias viewlog="clear && tail -f /Users/Tony/ecourt/logs/sustain.log"
 alias invoices="node ~/Desktop/querysql.js"
 alias sync="git push tony --all && git push bitbucket --all"
@@ -100,3 +98,6 @@ source ~/zsh-syntax-highlighting.zsh
 # source ~/powerlevel9k/powerlevel9k.zsh-theme
 
 clear
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
