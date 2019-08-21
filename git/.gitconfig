@@ -46,4 +46,5 @@
 	conflicts = diff --name-only --diff-filter=U
 	unstage = reset HEAD --
 	userstats = shortlog -s -n --all
-    compare = log --left-right --graph --cherry-pick --oneline
+	keep-theirs= !sh -c "grep -lr '<<<<<<<' . | cut -d '/' -f2- | xargs git checkout --theirs"
+	keep-ours= !sh -c "grep -lr '<<<<<<<' . | cut -d '/' -f2- | xargs git checkout --ours"
