@@ -18,7 +18,7 @@
 	b = branch
 	st = status
 	ac = !git add -A && git commit -m
-	br = !sh -c 'git branch --all | less'
+	br = !sh -c 'git branch --all'
 	lg = log --pretty=prettyprint --date=short
 	fa = fetch --all --prune
 	fo = fetch origin --prune
@@ -47,3 +47,5 @@
 	unstage = reset HEAD --
 	userstats = shortlog -s -n --all
     compare = log --left-right --graph --cherry-pick --oneline
+[pager]
+	branch = false
