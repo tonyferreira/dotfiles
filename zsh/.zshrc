@@ -1,10 +1,10 @@
 export ZSH=/Users/Tony/.oh-my-zsh
 export Z_HOME=/usr/local/Cellar/z/1.9/etc/profile.d/z.sh
 export MANPATH=/usr/local/man:$MANPATH
-export PATH="/usr/bin:/usr/local/Cellar/sstp-client/1.0.12/sbin:$HOME/.fastlane/bin:node_modules/electron/dist/Electron.app/Contents/MacOS:/Applications/chromedriver:$HOME/.rbenv/shims:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/bin:/usr/local/Cellar/sstp-client/1.0.12/sbin:$HOME/.fastlane/bin:node_modules/electron/dist/Electron.app/Contents/MacOS:/Applications/chromedriver:$HOME/.rbenv/shims:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.npm-global/bin:$PATH"
 export fpath=(~/.zsh/completion $fpath)
 export visual=vim
-export ASPNETCORE_ENVIRONMENT=docker
+export GOPATH=$HOME/go 
 
 HISTFILE=˜/.bash_history
 HISTSIZE=1000
@@ -50,7 +50,7 @@ alias copylast='echo $(fc -l -1) | pbcopy'
 alias swift="cd ~/Repositories/pa42/swift && clear"
 alias ecourt="cd ~/Repositories/@ecourt/ecourt-fork && clear"
 alias repositories="cd ~/Repositories && clear"
-alias usmc-make="cd ~/Repositories/usmc/usmc-make && clear"
+alias make="cd ~/Repositories/usmc/make && clear"
 alias zshrc="code ~/.zshrc"
 alias tomcat="cd /usr/local/tomcat && clear"
 alias viewlog="clear && tail -f /Users/Tony/ecourt/logs/sustain.log"
@@ -67,6 +67,10 @@ alias path="split $PATH"
 alias chromedebug="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222"
 alias docker-clean-unused='docker system prune --all --force --volumes'
 alias docker-clean-all='docker container stop  && docker system prune -a -f --volumes'
+
+function dirs() {
+	tree -d -L $2 -I 'node_modules'
+}
 
 function lx() {
   ls -l | awk '{print $9}'
@@ -90,8 +94,8 @@ else
 fi
 
 autoload -Uz compinit && compinit -i
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# prompt pure
 
 # export PATH="$HOME/.fastlane/bin:$PATH"
 
