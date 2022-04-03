@@ -1,10 +1,11 @@
 export ZSH=/Users/Tony/.oh-my-zsh
 export Z_HOME=/usr/local/Cellar/z/1.9/etc/profile.d/z.sh
+export PATH="/usr/bin:/usr/local/bin:/usr/local/sbin:$HOME/.dotnet/tools:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export MANPATH=/usr/local/man:$MANPATH
-export PATH="/usr/bin:/usr/local/Cellar/sstp-client/1.0.12/sbin:$HOME/.fastlane/bin:node_modules/electron/dist/Electron.app/Contents/MacOS:/Applications/chromedriver:$HOME/.rbenv/shims:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.npm-global/bin:$PATH"
 export fpath=(~/.zsh/completion $fpath)
 export visual=vim
+export NODE_PATH=$(npm root -g)
 
 HISTFILE=˜/.bash_history
 HISTSIZE=1000
@@ -43,28 +44,17 @@ unsetopt correct_all
 
 alias code="code-insiders"
 alias dirs="dirs -v"
-alias ohmyzsh="code ~/.oh-my-zsh"
 alias copylast='echo $(fc -l -1) | pbcopy'
-alias swift="cd ~/Repositories/pa42/swift && clear"
-alias ecourt="cd ~/Repositories/@ecourt/ecourt-fork && clear"
 alias repositories="cd ~/Repositories && clear"
-alias make="cd ~/Repositories/usmc/make && clear"
-alias smstools="cd ~/Repositories/smstools && clear"
-alias zshrc="code ~/.zshrc"
-alias viewlog="clear && tail -f /Users/Tony/ecourt/logs/sustain.log"
-alias invoices="node ~/Desktop/querysql.js"
-alias sync="git push tony --all && git push bitbucket --all"
-alias debug="clear && npm run debug"
-alias python="python2"
-alias pip="pip3"
-alias compose="docker-compose"
+alias make="cd ~/Repositories/make && clear"
+alias zshrc="subl ~/.zshrc"
 alias pth="print -l $path"
-alias vim=nvim
-alias vi=nvim
 alias path="split $PATH"
-alias chromedebug="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222"
 alias docker-clean-unused='docker system prune --all --force --volumes'
 alias docker-clean-all='docker container stop  && docker system prune -a -f --volumes'
+alias myip='ipconfig getifaddr en0'
+alias chrome='open -a /Applications/Google\ Chrome.app'
+alias chromedebug="sudo /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --no-first-run --inspect --no-default-browser-check"
 
 function dirs() {
 	tree -d -L $2 -I 'node_modules'
@@ -88,7 +78,7 @@ function cpalette() {
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='code'
+  export EDITOR='subl'
 fi
 
 autoload -Uz compinit && compinit -i
@@ -99,6 +89,7 @@ autoload -Uz compinit && compinit -i
 
 source $ZSH/oh-my-zsh.sh
 source ~/zsh-syntax-highlighting.zsh
+/Users/tony/Repositories/dotfiles/zsh/zsh-syntax-highlighting
 # source ~/powerlevel9k/powerlevel9k.zsh-theme
 
 clear

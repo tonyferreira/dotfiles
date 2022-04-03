@@ -1,0 +1,1 @@
+/Users/tony/zsh-syntax-highlighting.zsh
