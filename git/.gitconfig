@@ -4,8 +4,7 @@
 [core]
 	autocrlf = true
 	editor   = code-insiders
-[status]
-	m = merge --no-ff
+	excludesfile = /Users/tony/.gitignore_global
 [pretty]
 	prettyprint = %Cred%ad%x09%Cblue%an%x09%x09%C(yellow)%h%x09%Creset%<(75,trunc)%s
 [diff]
@@ -14,6 +13,10 @@
 	tool = bc3
 [mergetool "bc3"]
 	trustExitCode = true
+[pager]
+	branch = false
+[credential "https://ado.ar30.dev"]
+	provider = generic
 [alias]
 	b = branch
 	st = status
@@ -47,7 +50,5 @@
 	unstage = reset HEAD --
 	userstats = shortlog -s -n --all
     compare = log --left-right --graph --cherry-pick --oneline
-[pager]
-	branch = false
-[credential "https://ado.ar30.dev"]
-	provider = generic
+	changes = diff origin/development --name-only
+
