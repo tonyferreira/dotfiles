@@ -1,8 +1,8 @@
 [user]
-	email = tferreira92879@gmail.com
+	email = tony.ferreira@vialase.com
 	name  = Tony Ferreira
 [core]
-	autocrlf = input
+	autocrlf = true
 	editor   = code-insiders
 [status]
 	m = merge --no-ff
@@ -49,3 +49,5 @@
     compare = log --left-right --graph --cherry-pick --oneline
 [pager]
 	branch = false
+[credential "https://ado.ar30.dev"]
+	provider = generic
