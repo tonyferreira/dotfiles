@@ -1,22 +1,30 @@
 [user]
-	email = tony.ferreira@vialase.com
-	name  = Tony Ferreira
+	email = email.tferreira@gmail.com
+	name = Tony Ferreira
 [core]
 	autocrlf = true
-	editor   = code-insiders
-	excludesfile = /Users/tony/.gitignore_global
+	editor   = notepad
 [pretty]
 	prettyprint = %Cred%ad%x09%Cblue%an%x09%x09%C(yellow)%h%x09%Creset%<(75,trunc)%s
-[diff]
-	tool = bc3
-[merge]
-	tool = bc3
-[mergetool "bc3"]
-	trustExitCode = true
+[safe]
+	directory = C:/Users/tony.ferreira/Repositories/32feet
+	directory = C:/Users/tony.ferreira/Repositories/Vialase
 [pager]
 	branch = false
 [credential "https://ado.ar30.dev"]
 	provider = generic
+[diff]
+	tool = bc
+[difftool "bc"]
+	path = c:/Program Files/Beyond Compare 4/bcomp.exe
+[merge]
+	tool = bc
+[mergetool "bc"]
+	path = c:/Program Files/Beyond Compare 4/bcomp.exe
+[difftool]
+	prompt = false
+[mergetool]
+	keepBackup = false	
 [alias]
 	b = branch
 	st = status
@@ -51,4 +59,15 @@
 	userstats = shortlog -s -n --all
     compare = log --left-right --graph --cherry-pick --oneline
 	changes = diff origin/development --name-only
-
+	commit-message = log --format=%B -n 1
+	cs = show --pretty=\"\" --name-only
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[difftool "sourcetree"]
+	cmd = "'' "
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true
