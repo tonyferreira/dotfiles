@@ -1,5 +1,5 @@
-# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/avit.omp.json" | Invoke-Expression
-Set-PoshPrompt -Theme avit
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/avit.omp.json" | Invoke-Expression
+# Invoke-Expression (&starship init powershell)
 
 Import-Module PSReadLine
 Import-Module Terminal-Icons
