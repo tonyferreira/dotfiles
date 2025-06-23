@@ -60,7 +60,7 @@
     "scm.inputFontSize": 16,
     "terminal.integrated.fontSize": 16,
     "workbench.activityBar.location": "top",
-    "window.zoomLevel": 1.2,
+    "window.zoomLevel": 1.5,
     "editor.mouseWheelZoom": true,
     "window.zoomPerWindow": false,
     "terminal.integrated.mouseWheelZoom": true,
@@ -71,5 +71,6 @@
     "terminal.integrated.fontLigatures.enabled": true,
     "terminal.integrated.fontFamily": "'Hack Nerd Font'",
     "security.workspace.trust.banner": "never",
-    "security.workspace.trust.enabled": false
+    "security.workspace.trust.enabled": false,
+    "workbench.iconTheme": "vscode-icons"
 }
