@@ -9,6 +9,7 @@
 [safe]
 	directory = C:/Users/tony.ferreira/Repositories/32feet
 	directory = C:/Users/tony.ferreira/Repositories/Vialase
+	directory = C:/Users/Tony/Repositories/Vialase
 [pager]
 	branch = false
 [credential "https://ado.ar30.dev"]
