@@ -7,10 +7,8 @@
 [pretty]
 	prettyprint = %Cred%ad%x09%Cblue%an%x09%x09%C(yellow)%h%x09%Creset%<(75,trunc)%s
 [safe]
-	directory = C:/Users/tony.ferreira/Repositories/32feet
-	directory = C:/Users/tony.ferreira/Repositories/Vialase
-	directory = C:/Users/tony.ferreira/Repositories/viatreat
-	directory = C:/Users/tony.ferreira/Repositories/Viatreat
+	directory = C:/Users/tony.ferreira/*
+	directory = C:/Users/Tony/*
 [pager]
 	branch = false
 [credential "https://ado.ar30.dev"]

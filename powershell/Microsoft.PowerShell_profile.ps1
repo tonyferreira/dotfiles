@@ -34,18 +34,18 @@ Set-PSReadLineKeyHandler -Key Alt+B -Function SelectShellBackwardWord
 Set-PSReadLineKeyHandler -Key Alt+F -Function SelectShellForwardWord
 
 Set-PSReadLineKeyHandler -Key Ctrl+Shift+b `
-                         -BriefDescription BuildCurrentDirectory `
-                         -LongDescription "Build the current directory" `
-                         -ScriptBlock {
+    -BriefDescription BuildCurrentDirectory `
+    -LongDescription "Build the current directory" `
+    -ScriptBlock {
     [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
     [Microsoft.PowerShell.PSConsoleReadLine]::Insert("dotnet build")
     [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 }
 
 Set-PSReadLineKeyHandler -Key F1 `
-                         -BriefDescription CommandHelp `
-                         -LongDescription "Open the help window for the current command" `
-                         -ScriptBlock {
+    -BriefDescription CommandHelp `
+    -LongDescription "Open the help window for the current command" `
+    -ScriptBlock {
     param($key, $arg)
 
     $ast = $null
@@ -55,25 +55,21 @@ Set-PSReadLineKeyHandler -Key F1 `
     [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$ast, [ref]$tokens, [ref]$errors, [ref]$cursor)
 
     $commandAst = $ast.FindAll( {
-        $node = $args[0]
-        $node -is [CommandAst] -and
+            $node = $args[0]
+            $node -is [CommandAst] -and
             $node.Extent.StartOffset -le $cursor -and
             $node.Extent.EndOffset -ge $cursor
         }, $true) | Select-Object -Last 1
 
-    if ($commandAst -ne $null)
-    {
+    if ($commandAst -ne $null) {
         $commandName = $commandAst.GetCommandName()
-        if ($commandName -ne $null)
-        {
+        if ($commandName -ne $null) {
             $command = $ExecutionContext.InvokeCommand.GetCommand($commandName, 'All')
-            if ($command -is [AliasInfo])
-            {
+            if ($command -is [AliasInfo]) {
                 $commandName = $command.ResolvedCommandName
             }
 
-            if ($commandName -ne $null)
-            {
+            if ($commandName -ne $null) {
                 Get-Help $commandName -ShowWindow
             }
         }
@@ -81,43 +77,36 @@ Set-PSReadLineKeyHandler -Key F1 `
 }
 
 Set-PSReadLineKeyHandler -Key F7 `
-                         -BriefDescription History `
-                         -LongDescription 'Show command history' `
-                         -ScriptBlock {
+    -BriefDescription History `
+    -LongDescription 'Show command history' `
+    -ScriptBlock {
     $pattern = $null
     [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$pattern, [ref]$null)
-    if ($pattern)
-    {
+    if ($pattern) {
         $pattern = [regex]::Escape($pattern)
     }
 
     $history = [System.Collections.ArrayList]@(
         $last = ''
         $lines = ''
-        foreach ($line in [System.IO.File]::ReadLines((Get-PSReadLineOption).HistorySavePath))
-        {
-            if ($line.EndsWith('`'))
-            {
+        foreach ($line in [System.IO.File]::ReadLines((Get-PSReadLineOption).HistorySavePath)) {
+            if ($line.EndsWith('`')) {
                 $line = $line.Substring(0, $line.Length - 1)
-                $lines = if ($lines)
-                {
+                $lines = if ($lines) {
                     "$lines`n$line"
                 }
-                else
-                {
+                else {
                     $line
                 }
                 continue
             }
 
-            if ($lines)
-            {
+            if ($lines) {
                 $line = "$lines`n$line"
                 $lines = ''
             }
 
-            if (($line -cne $last) -and (!$pattern -or ($line -match $pattern)))
-            {
+            if (($line -cne $last) -and (!$pattern -or ($line -match $pattern))) {
                 $last = $line
                 $line
             }
@@ -126,8 +115,7 @@ Set-PSReadLineKeyHandler -Key F7 `
     $history.Reverse()
 
     $command = $history | Out-GridView -Title History -PassThru
-    if ($command)
-    {
+    if ($command) {
         [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
         [Microsoft.PowerShell.PSConsoleReadLine]::Insert(($command -join "`n"))
     }
@@ -136,21 +124,21 @@ Set-PSReadLineKeyHandler -Key F7 `
 
 Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
     param($wordToComplete, $commandAst, $cursorPosition)
-        [Console]::InputEncoding = [Console]::OutputEncoding = $OutputEncoding = [System.Text.Utf8Encoding]::new()
-        $Local:word = $wordToComplete.Replace('"', '""')
-        $Local:ast = $commandAst.ToString().Replace('"', '""')
-        winget complete --word="$Local:word" --commandline "$Local:ast" --position $cursorPosition | ForEach-Object {
-            [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
-        }
+    [Console]::InputEncoding = [Console]::OutputEncoding = $OutputEncoding = [System.Text.Utf8Encoding]::new()
+    $Local:word = $wordToComplete.Replace('"', '""')
+    $Local:ast = $commandAst.ToString().Replace('"', '""')
+    winget complete --word="$Local:word" --commandline "$Local:ast" --position $cursorPosition | ForEach-Object {
+        [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
+    }
 }
 
 # PowerShell parameter completion shim for the dotnet CLI
 Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
-     param($commandName, $wordToComplete, $cursorPosition)
-         dotnet complete --position $cursorPosition "$wordToComplete" | ForEach-Object {
-            [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
-         }
- }
+    param($commandName, $wordToComplete, $cursorPosition)
+    dotnet complete --position $cursorPosition "$wordToComplete" | ForEach-Object {
+        [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
+    }
+}
 
 function upall {
     scoop update *
