@@ -56,9 +56,20 @@
         "fieldset",
         "Vialase"
     ],
-    "editor.minimap.enabled": false,
     "debug.console.fontSize": 16,
     "scm.inputFontSize": 16,
     "terminal.integrated.fontSize": 16,
-    "workbench.activityBar.location": "top"
+    "workbench.activityBar.location": "top",
+    "window.zoomLevel": 1.2,
+    "editor.mouseWheelZoom": true,
+    "window.zoomPerWindow": false,
+    "terminal.integrated.mouseWheelZoom": true,
+    "editor.stickyScroll.enabled": false,
+    "editor.stickyScroll.scrollWithEditor": false,
+    "workbench.tree.enableStickyScroll": false,
+    "terminal.integrated.stickyScroll.enabled": false,
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.fontFamily": "'Hack Nerd Font'",
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.enabled": false
 }
