@@ -41,7 +41,7 @@
             "font": 
             {
                 "face": "Hack Nerd Font Mono",
-                "size": 14,
+                "size": 18,
                 "weight": "semi-light"
             },
             "historySize": 12000,
@@ -228,5 +228,10 @@
         }
     ],
     "useAcrylicInTabRow": true,
-    "windowingBehavior": "useNew"
+    "windowingBehavior": "useNew",
+    "workbench.colorTheme": "Nord",
+    "editor.minimap.renderCharacters": false,
+    "editor.fontSize": 18,
+    "editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace",
+    "workbench.activityBar.location": "top"
 }
