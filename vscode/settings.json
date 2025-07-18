@@ -60,7 +60,6 @@
     "scm.inputFontSize": 16,
     "terminal.integrated.fontSize": 16,
     "workbench.activityBar.location": "top",
-    "window.zoomLevel": 1.5,
     "editor.mouseWheelZoom": true,
     "window.zoomPerWindow": false,
     "terminal.integrated.mouseWheelZoom": true,
@@ -72,5 +71,10 @@
     "terminal.integrated.fontFamily": "'Hack Nerd Font'",
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.enabled": false,
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 1.5,
+    "makefile.configureOnOpen": true,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 1000 }",
+    "explorer.confirmDragAndDrop": false,
+    "editor.codeLens": false
 }
