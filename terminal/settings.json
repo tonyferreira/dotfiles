@@ -1,8 +1,8 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
-    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "$schema": "https://aka.ms/terminal-profiles-schema-preview",
     "actions": [],
-    "alwaysShowTabs": false,
+    "alwaysShowTabs": true,
     "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": true,
@@ -42,15 +42,15 @@
             {
                 "face": "Hack Nerd Font Mono",
                 "size": 14,
-                "weight": "extra-light"
+                "weight": "semi-light"
             },
             "historySize": 12000,
             "intenseTextStyle": "bright",
-            "opacity": 80,
+            "opacity": 95,
             "padding": "8",
             "scrollbarState": "visible",
             "startingDirectory": "%USERPROFILE%\\Repositories",
-            "useAcrylic": true
+            "useAcrylic": false
         },
         "list": 
         [
@@ -92,6 +92,36 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
+            },
+            {
+                "guid": "{5fb123f1-af88-5b5c-8953-d14a8def1978}",
+                "hidden": false,
+                "name": "PowerShell 7",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{2595cd9c-8f05-55ff-a1d4-93f3041ca67f}",
+                "hidden": false,
+                "name": "PowerShell Preview (msix)",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{07ed06ff-4145-59c6-b9bc-560a7caa26aa}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022 [Preview]",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{2eafba28-8bac-5b98-9b93-2c6d846eecb0}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022 [Preview]",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
             }
         ]
     },
@@ -167,8 +197,9 @@
             "yellow": "#3D2AFF"
         }
     ],
-    "showTabsInTitlebar": false,
-    "tabSwitcherMode": "inOrder",
+    "showTabsFullscreen": true,
+    "showTabsInTitlebar": true,
+    "tabSwitcherMode": "disabled",
     "theme": "Catppuccin Mocha",
     "themes": 
     [
@@ -196,6 +227,6 @@
             }
         }
     ],
-    "useAcrylicInTabRow": false,
+    "useAcrylicInTabRow": true,
     "windowingBehavior": "useNew"
 }
