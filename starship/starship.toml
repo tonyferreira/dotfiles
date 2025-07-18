@@ -12,9 +12,9 @@ palette = 'catppuccin_mocha'
 [directory]
 style = 'mauve'
 format = '[$path ]($style)'
-truncation_length = 4
+truncation_length = 10
 truncation_symbol = '\'
-truncate_to_repo = false
+truncate_to_repo = true
 
 [git_branch]
 style = 'fg:text'
