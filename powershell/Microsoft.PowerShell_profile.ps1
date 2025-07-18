@@ -13,7 +13,7 @@ Set-Alias rm rm.exe
 Set-Alias grep findstr
 Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
-Set-Alias code 'code-insiders'
+Set-Alias code 'C:\Program Files\VSCodeInsiders\Code - Insiders.exe'
 
 
 Set-PSReadLineOption -BellStyle None
