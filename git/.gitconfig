@@ -1,14 +1,16 @@
 [user]
-	email = email.tferreira@gmail.com
+	email = tony.ferreira@vialase.com
 	name = Tony Ferreira
 [core]
 	autocrlf = true
-	editor   = notepad
+	editor = code
 [pretty]
 	prettyprint = %Cred%ad%x09%Cblue%an%x09%x09%C(yellow)%h%x09%Creset%<(75,trunc)%s
 [safe]
 	directory = C:/Users/tony.ferreira/*
 	directory = C:/Users/Tony/*
+	directory = C:/Users/tony.ferreira/*
+	directory = C:/Users/tony.ferreira/Repositories/Vialase
 [pager]
 	branch = false
 [credential "https://ado.ar30.dev"]
@@ -16,11 +18,11 @@
 [diff]
 	tool = bc
 [difftool "bc"]
-	path = c:/Program Files/Beyond Compare 4/bcomp.exe
+	path = C:/Program Files/Beyond Compare 5/BCompare.exe
 [merge]
 	tool = bc
 [mergetool "bc"]
-	path = c:/Program Files/Beyond Compare 4/bcomp.exe
+	path = C:/Program Files/Beyond Compare 5/BCompare.exe
 [difftool]
 	prompt = false
 [mergetool]
@@ -71,3 +73,6 @@
 [mergetool "sourcetree"]
 	cmd = "'' "
 	trustExitCode = true
+	keepBackup = false
+[init]
+	defaultBranch = main
