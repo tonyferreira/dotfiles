@@ -3,7 +3,7 @@
 	name = Tony Ferreira
 [core]
 	autocrlf = true
-	editor = code
+	editor = notepad
 [pretty]
 	prettyprint = %Cred%ad%x09%Cblue%an%x09%x09%C(yellow)%h%x09%Creset%<(75,trunc)%s
 [safe]
@@ -76,3 +76,5 @@
 	keepBackup = false
 [init]
 	defaultBranch = main
+[push]
+	autoSetupRemote = true
