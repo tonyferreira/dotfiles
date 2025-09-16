@@ -8,7 +8,7 @@
     "copyOnSelect": true,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "firstWindowPreference": "defaultProfile",
-    "initialCols": 150,
+    "initialCols": 125,
     "initialRows": 50,
     "keybindings": 
     [
@@ -30,6 +30,22 @@
     [
         {
             "type": "remainingProfiles"
+        },
+        {
+            "allowEmpty": false,
+            "entries": 
+            [
+                {
+                    "commandline": null,
+                    "name": null,
+                    "source": "Windows.Terminal.SSH",
+                    "type": "matchProfiles"
+                }
+            ],
+            "icon": "\ue969",
+            "inline": "auto",
+            "name": "SSH",
+            "type": "folder"
         }
     ],
     "newTabPosition": "afterCurrentTab",
@@ -79,63 +95,16 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{2eccc05c-2a93-5d42-8ffa-69bbe63d3732}",
+                "guid": "{13673936-280d-5ad7-83f0-aba5822ccc98}",
                 "hidden": false,
-                "name": "Developer Command Prompt for VS 2022 [Preview]",
-                "source": "Windows.Terminal.VisualStudio"
+                "name": "SSH - Vialuxe",
+                "source": "Windows.Terminal.SSH"
             },
             {
-                "guid": "{09c63306-47f8-5a0a-b02a-744acfd8b93e}",
+                "guid": "{548da581-0cd3-5ea7-bbaa-38c6c7665639}",
                 "hidden": false,
-                "name": "Developer PowerShell for VS 2022 [Preview]",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
-                "name": "Windows PowerShell"
-            },
-            {
-                "guid": "{5fb123f1-af88-5b5c-8953-d14a8def1978}",
-                "hidden": false,
-                "name": "PowerShell 7",
-                "source": "Windows.Terminal.PowershellCore"
-            },
-            {
-                "guid": "{2595cd9c-8f05-55ff-a1d4-93f3041ca67f}",
-                "hidden": false,
-                "name": "PowerShell Preview (msix)",
-                "source": "Windows.Terminal.PowershellCore"
-            },
-            {
-                "guid": "{07ed06ff-4145-59c6-b9bc-560a7caa26aa}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022 [Preview]",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{2eafba28-8bac-5b98-9b93-2c6d846eecb0}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022 [Preview]",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
-                "hidden": true,
-                "name": "Visual Studio Debug Console",
-                "source": "VSDebugConsole"
-            },
-            {
-                "guid": "{9fdc5e25-05ef-5237-a055-4cec0bb59bf8}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 21",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{6f1bcd77-550d-5f11-b8b5-837f909353bd}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 21",
-                "source": "Windows.Terminal.VisualStudio"
+                "name": "SSH - Lab",
+                "source": "Windows.Terminal.SSH"
             }
         ]
     },

@@ -11,6 +11,7 @@
 	directory = C:/Users/Tony/*
 	directory = C:/Users/tony.ferreira/*
 	directory = C:/Users/tony.ferreira/Repositories/Vialase
+	directory = C:/Users/tony.ferreira/Repositories/vialase
 [pager]
 	branch = false
 [credential "https://ado.ar30.dev"]
@@ -32,7 +33,8 @@
 	st = status
 	ac = !git add -A && git commit -m
 	br = !sh -c 'git branch --all'
-	lg = log --pretty=prettyprint --date=short
+	lg = log origin/development..HEAD --pretty=prettyprint --date=short
+	lgx = log --pretty=prettyprint --date=short
 	fa = fetch --all --prune
 	fo = fetch origin --prune
 	pd = pull origin development --no-edit

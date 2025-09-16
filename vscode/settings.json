@@ -72,9 +72,18 @@
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
-    "window.zoomLevel": 1.5,
+    "window.zoomLevel": 1.2,
     "makefile.configureOnOpen": true,
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 1000 }",
     "explorer.confirmDragAndDrop": false,
-    "editor.codeLens": false
+    "editor.codeLens": false,
+    "editor.minimap.enabled": false,
+    "git.openRepositoryInParentFolders": "never",
+    "vsicons.dontShowNewVersionMessage": true,
+    "csharp.format.enable": false,
+    "razor.languageServer.useNewFormattingEngine": false,
+    "razor.format.enable": false,
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    }
 }
