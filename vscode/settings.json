@@ -204,7 +204,7 @@
     ],
     "debug.console.fontSize": 16,
     "scm.inputFontSize": 16,
-    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontSize": 11,
     "workbench.activityBar.location": "top",
     "editor.mouseWheelZoom": true,
     "window.zoomPerWindow": false,
@@ -228,16 +228,40 @@
     "razor.languageServer.useNewFormattingEngine": false,
     "razor.format.enable": false,
     "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format"
+        "editor.defaultFormatter": "ms-vscode.cpptools"
     },
     "useAcrylicInTabRow": false,
     "windowingBehavior": "useNew",
-    "window.zoomLevel": 1.5,
+    "window.zoomLevel": 2,
     "explorer.confirmDelete": false,
-    "workbench.colorTheme": "Nord",
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.fontFamily": "'Source Code Pro',Consolas, 'Courier New', monospace",
     "chat.editor.fontSize": 18,
     "markdown.preview.fontSize": 18,
-    "editor.codeLens": false
+    "editor.codeLens": false,
+    "files.autoSave": "afterDelay",
+    "mssql.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "2C3D3D51-E366-4AEC-B834-DE07C66E508A"
+        }
+    ],
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe" // This path points to your pwsh 7.x installation
+        },
+        "Windows PowerShell": {
+            "path": "powershell.exe"
+        }
+    },
+    "workbench.colorTheme": "Nord",
+    "gitlens.graph.minimap.enabled": false,
+    "gitlens.graph.minimap.additionalTypes": [
+        "localBranches"
+    ],
+    "diffEditor.renderSideBySide": true,
+    "database-client.autoSync": true
 }

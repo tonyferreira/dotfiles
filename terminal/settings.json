@@ -8,7 +8,7 @@
     "copyOnSelect": true,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "firstWindowPreference": "defaultProfile",
-    "initialCols": 125,
+    "initialCols": 150,
     "initialRows": 50,
     "keybindings": 
     [
@@ -105,6 +105,18 @@
                 "hidden": false,
                 "name": "SSH - Lab",
                 "source": "Windows.Terminal.SSH"
+            },
+            {
+                "guid": "{2ce79512-70d4-58b1-a957-191aa4ec4d5a}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 18 [Preview]",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{1825fc8f-5f42-5706-9d39-730df0ff6a18}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 18 [Preview]",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
