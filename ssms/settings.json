@@ -1,0 +1,13 @@
+/* Visual Studio Settings File */
+{
+  "environment.documents.showMiscFileProject": true,
+  "languages.xml.tabs.indenting": "smart",
+  "languages.defaults.tabs.indenting": "block",
+  "languages.defaults.tabs.character": "tab",
+  "environment.general.environmentStart": "empty",
+  "sqlServerObjectExplorer.scriptingOptions.object.scriptXmlCompressionOptions": false,
+  "sqlServerObjectExplorer.scriptingOptions.object.scriptDataCompressionOptions": false,
+  "sqlServerObjectExplorer.scriptingOptions.tableView.scriptPartitionSchemes": false,
+  "sqlServerObjectExplorer.scriptingOptions.version.scriptSyntaxVersion": "Version140",
+  "environment.visualExperience.colorTheme": "light"
+}
